@@ -16,7 +16,7 @@
 </head>
 <body>
     
-<h2>Version 1.0</h2><br>
+<h2>Version 1.1</h2><br>
     
 <?php
 $servername = "mysql.ecloudmanager.com";
