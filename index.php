@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Customers</title>
+    <title>eCloud Customers</title>
     <style>
       table, th, td {
         border: 1px solid black;
