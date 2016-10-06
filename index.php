@@ -15,6 +15,7 @@
     </style>
 </head>
 <body>
+    <h>Version 1.0</h>
 <?php
 $servername = "mysql.ecloudmanager.com";
 $username = "db_admin";
