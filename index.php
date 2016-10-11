@@ -19,9 +19,9 @@
 <h2>Version 1.3</h2><br>
     
 <?php
-$servername = "mysql.ecloudmanager.com";
-$username = "db_admin";
-$password = "mysql_admin_password";
+$servername = ini_get("mysql.default.host");//"mysql.ecloudmanager.com";
+$username = ini_get("mysql.default.user");//"db_admin";
+$password = ini_get("mysql.default.password");//"mysql_admin_password";
 $dbname = "lamp_demo";
 
 // Create connection
