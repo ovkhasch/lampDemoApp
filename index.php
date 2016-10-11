@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>eCloud Customers</title>
+    <title>Cloudply Customers</title>
     <style>
       table, th, td {
         border: 1px solid black;
@@ -26,7 +26,7 @@ echo "<h3>Node: ";
 print $ini["node.fqdn"];    
 echo "</h3><br>";    
     
-$servername = $ini["mysql.default.host"];//"mysql.ecloudmanager.com";
+$servername = $ini["mysql.default.host"];//"mysql.cloudply.org";
 $username = $ini["mysql.default.user"];//"db_admin";
 $password = $ini["mysql.default.password"];//"mysql_admin_password";
 $dbname = "lamp_demo";
