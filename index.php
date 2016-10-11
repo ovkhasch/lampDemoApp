@@ -24,6 +24,8 @@ $username = ini_get("mysql.default.user");//"db_admin";
 $password = ini_get("mysql.default.password");//"mysql_admin_password";
 $dbname = "lamp_demo";
 
+print "\nConnecting to $servername \n";
+    
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
