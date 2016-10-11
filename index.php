@@ -22,7 +22,7 @@
     
 $ini = parse_ini_file(".user.ini");
     
-echo "<h3>Node: "
+echo "<h3>Node: ";
 print $ini["node.fqdn"];    
 echo "</h3><br>";    
     
