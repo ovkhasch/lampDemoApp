@@ -19,13 +19,13 @@
 <h2>Version 1.3</h2><br>
     
 <?php
-$servername = ini_get("mysql.default.host");//"mysql.ecloudmanager.com";
-$username = ini_get("mysql.default.user");//"db_admin";
-$password = ini_get("mysql.default.password");//"mysql_admin_password";
+$ini = parse_ini_file(".user.ini");
+
+$servername = $ini["mysql.default.host"];//"mysql.ecloudmanager.com";
+$username = $ini["mysql.default.user"];//"db_admin";
+$password = $ini["mysql.default.password"];//"mysql_admin_password";
 $dbname = "lamp_demo";
 
-print "\nConnecting to $servername \n";
-    
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
