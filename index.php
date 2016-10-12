@@ -16,7 +16,7 @@
 </head>
 <body>
     
-<h2>Version 1.3</h2><br>
+<h2>Version 1.3.1</h2><br>
     
 <?php
     
