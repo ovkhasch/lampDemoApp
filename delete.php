@@ -4,7 +4,8 @@
   if(isset($_GET['id'])!="")
   {
   $delete=$_GET['id'];
-  $delete=mysql_query("DELETE FROM customers WHERE id='$delete'");
+  $delete=$conn->query("DELETE FROM customers WHERE id='$delete'");
+  $conn->close();
   if($delete)
   {
       header("Location:index.php");
