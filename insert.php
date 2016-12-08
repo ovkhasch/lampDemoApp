@@ -6,8 +6,8 @@
   $first_name=mysql_real_escape_string($_POST['first_name']);
   $last_name=mysql_real_escape_string($_POST['last_name']);
   $usermail=mysql_real_escape_string($_POST['usermail']);
-  $update=mysql_query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( gen_uuid(), '$first_name','$last_name','$usermail')");
-  
+  $update=$conn->query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( gen_uuid(), '$first_name','$last_name','$usermail')");
+  $conn->close();
   if($update)
   {
       $msg="Successfully Updated!!";
