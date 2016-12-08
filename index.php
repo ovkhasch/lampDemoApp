@@ -41,6 +41,10 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
+// Close connection
+$conn->close();
+?>
+    
 <form action="insert.php" method="post" name="insertform">
 <p>
   <label for="name" id="preinput"> First Name : </label>
@@ -59,8 +63,5 @@ if ($result->num_rows > 0) {
 </p>
 </form>    
     
-// Close connection
-$conn->close();
-?>
 </body>
 </html>
