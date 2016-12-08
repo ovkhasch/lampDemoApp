@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
       foreach ($row as $col_value) {
           print "\t\t<td>$col_value</td>\n";
       }
-      echo "\t\t<td><a href=\"delete.php?id=$row['id']\" onclick=\"return confirm('Are you sure you wish to delete this Record?');\"> X </a></td>\n"
+      echo "\t\t<td><a href=\"delete.php?id=$row['id']\" onclick=\"return confirm(\'Are you sure you wish to delete this Record?\');\"> X </a></td>\n"
       echo "\t</tr>\n";
     }
     echo "</table>";
