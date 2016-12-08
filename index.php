@@ -41,6 +41,24 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
+<form action="insert.php" method="post" name="insertform">
+<p>
+  <label for="name" id="preinput"> First Name : </label>
+  <input type="text" name="first_name" required placeholder="First name" id="inputid"/>
+</p>
+<p>
+  <label for="name" id="preinput"> Last Name : </label>
+  <input type="text" name="last_name" required placeholder="Last name" id="inputid"/>
+</p>
+<p>
+  <label  for="email" id="preinput"> Email : </label>
+  <input type="email" name="usermail" required placeholder="Email" id="inputid" />
+</p>
+<p>
+  <input type="submit" name="send" value="Submit" id="inputid1"  />
+</p>
+</form>    
+    
 // Close connection
 $conn->close();
 ?>
