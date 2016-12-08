@@ -6,7 +6,7 @@
   $first_name=mysql_real_escape_string($_POST['first_name']);
   $last_name=mysql_real_escape_string($_POST['last_name']);
   $usermail=mysql_real_escape_string($_POST['usermail']);
-  $update=mysql_query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( uuid(), '$username','$last_name','$usermail')");
+  $update=mysql_query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( uuid(), '$first_name','$last_name','$usermail')");
   
   if($update)
   {
