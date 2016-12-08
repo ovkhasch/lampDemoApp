@@ -3,10 +3,10 @@
   include("db.php");
   if(isset($_POST['send'])!="")
   {
-  $first_name=mysql_real_escape_string($_POST['first_name']);
-  $last_name=mysql_real_escape_string($_POST['last_name']);
-  $usermail=mysql_real_escape_string($_POST['usermail']);
-  $update=$conn->query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( gen_uuid(), '$first_name','$last_name','$usermail')");
+  $first_name=$_POST['first_name'];
+  $last_name=$_POST['last_name'];
+  $usermail=$_POST['usermail'];
+  $update=$conn->query("INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( uuid(), '$first_name','$last_name','$usermail')");
   $conn->close();
   if($update)
   {
